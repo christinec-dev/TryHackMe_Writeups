@@ -5,4 +5,4 @@ Welcome! This repository contains all of my writeups for CTF's and labs that I f
 - [Pickle Rick CTF](https://github.com/christinec-dev/TryHackME_CTF_Writeups/tree/main/Pickle%20Rick%20CTF)
 
 ## THM CTF Navigation
-- [Windows PrivEsc]([https://tryhackme.com/room/picklerick](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/WindowsPrivesc))
+- [Windows PrivEsc](https://tryhackme.com/room/picklerick](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/WindowsPrivesc)
