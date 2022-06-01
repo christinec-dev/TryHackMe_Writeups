@@ -1,8 +1,8 @@
 # TryHack Me CTF Writeups
-Welcome! This repository contains all of my writeups for CTF's that I have completed on Try Hack Me. 😊 
+Welcome! This repository contains all of my writeups for CTF's and labs that I found challenging and completed on Try Hack Me. 😊 
 
 ## CTF Writeup Navigation
 - [Pickle Rick CTF](https://github.com/christinec-dev/TryHackME_CTF_Writeups/tree/main/Pickle%20Rick%20CTF)
 
 ## THM CTF Navigation
-- [Pickle Rick](https://tryhackme.com/room/picklerick)
+- [Windows PrivEsc]([https://tryhackme.com/room/picklerick](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/WindowsPrivesc))
