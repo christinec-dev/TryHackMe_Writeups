@@ -1,4 +1,4 @@
-# TryHack Me CTF Writeups
+# TryHack Me Writeups
 Welcome! This repository contains all of my writeups for CTF's and labs that I found challenging and completed on Try Hack Me. 😊 
 
 ## CTF Writeup Navigation
