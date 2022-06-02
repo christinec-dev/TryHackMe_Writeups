@@ -6,3 +6,4 @@ Welcome! This repository contains all of my writeups for CTF's and labs that I f
 
 ## THM CTF Navigation
 - [Windows PrivEsc](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/WindowsPrivesc)
+- [Linux PrivEsc](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/LinuxPrivEsc)
