@@ -11,7 +11,7 @@ Just a quick note before we start. If you run the IP address of your given machi
 ---
 
 ## What is Miles password for his emails?
-Before we get _crackalacking_ at miles' emails, we need to do some basic enumeration. Let's start with an nmap scan to see what services are running on our open ports. Let's take note of our Samba smbd workgroup that is running, as this means we can exploit it via [smbclient](https://bestestredteam.com/2019/03/15/using-smbclient-to-enumerate-shares/)!
+Before we get _crackalacking_ at Miles' emails, we need to do some basic enumeration. Let's start with an nmap scan to see what services are running on our open ports. Let's take note of our Samba smbd workgroup that is running, as this means we can exploit it via [smbclient](https://bestestredteam.com/2019/03/15/using-smbclient-to-enumerate-shares/)!
 
 `nmap -sV -Pn <your machine IP>`
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nse2gm6gg2fc59rgrdz7.png)
@@ -26,6 +26,7 @@ We can identify two important shares: milesdyson and anonymous. When we try to l
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/m7zy8j9cmpc73632no0b.png)
 
 When we read the `attention.txt` file from anonymous's share we can see that all users had to change their passwords. When we read the `logs` we can see that it contains all the changed passwords! (Only log1.txt contains any data. Log2 and 3 have no data).
+![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6zt1h49qjej0d5p5p7jd.png)
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4laul80a0d3c1149m4h7.png)
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/adh3w49ku0kkusn31i2p.png)
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/kg0084x49lmhiqwn3ptf.png)
@@ -38,7 +39,7 @@ Copy the data from logs1.txt into a .txt file on your Desktop, or download it fr
 Now we can use Hydra to brute force Miles's password.
 `
 export ip=<your machine IP>
-hydra -L users.txt -P log1.txt &ip smb -V -f
+hydra -L users.txt -P log1.txt $ip smb -V -f
 ` 
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0jsavb7pt7jdb7zert67.png)
 
@@ -64,7 +65,7 @@ If we read the seranakogan@skynet emails, we realize it's useless binary code. T
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/odz5q4cpeahr1b1fqyt6.png)
 
 Let's head back to our terminal and try to log in this time with milesdyson's username and the password from the email above.
-`smbclient //<your machine IP>/milesdyson -U "milesdyson`
+`smbclient //<your machine IP>/milesdyson -U "milesdyson"`
 ![Skynet CTF](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bvfbh8xq84q93xfpuja0.png)
 
 We now have access to his smb! We are hacker masters. Let's see what is in his `/notes` directory.
@@ -158,27 +159,3 @@ We now have root access. We can simply now cd into `/root` and get our flag!
 
 ## Conclusion
 Congratulations! You have successfully completed the Skynet CTF. I hope this was easy enough to follow, and that you had fun along the way. Until next time, happy hacking! 😊
-
-
-
-  
-
-
-  
- 
- 
- 
- 
- 
- 
- 
-
-
-  
- 
-
-
-
- 
-
-
