@@ -9,6 +9,7 @@ Welcome! This repository contains all of my writeups for CTF's and labs that I f
 - [Basic Pentesting CTF](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/Basic%20Pentesting%20CTF)
 - [Skynet CTF](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/Skynet%20CTF)
 - [Mr Robot CTF](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/Mr%20Robot)
+- [Wonderland CTF](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/Mr%20Robot)
 
 ## THM Lab Writeup Navigation
 - [Windows PrivEsc](https://github.com/christinec-dev/TryHackMe_Writeups/tree/main/WindowsPrivesc)
