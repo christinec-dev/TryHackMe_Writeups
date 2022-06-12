@@ -1,3 +1,5 @@
+# Daily Bugle: A Spiderman Themed Try Hack Me CTF 🕸️
+
 If you had to choose between Marvel and DC, who would you choose? I think we all have a favorite, but we cannot deny the fact that we all like Spiderman. This is not a fact, but an opinion so don't hold me to this bold statement! 😅
 
 Today we are going to hack the Daily Bugle, are you ready? 🕵️‍♀️
